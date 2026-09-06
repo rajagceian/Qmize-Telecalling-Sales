@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./App.css";
 
 const API_URL =
-  `${import.meta.env.BACKEND_API_URL}/api/candidate-info`;
+  `${import.meta.env.VITE_API_URL}/api/candidate-info`;
 
 function App() {
 
