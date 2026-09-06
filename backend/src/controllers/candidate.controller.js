@@ -12,11 +12,10 @@ async function candidateDetails(req, res) {
       whatsappNumber,
       collegeName,
       registrationNumber,
-      cgpa,
-      branch,
+      qualification,
       passoutYear,
-      backlogs,
-      hasLaptop,
+      experience,
+      hindiCommunication,
     } = req.body;
 
     const isExist = await Candidate.findOne({ registrationNumber });
@@ -61,17 +60,17 @@ async function candidateDetails(req, res) {
       whatsappNumber,
       collegeName,
       registrationNumber,
-      branch,
-      cgpa,
+      qualification,
       passoutYear,
-      backlogs,
-      hasLaptop,
+      experience,
+      hindiCommunication,
       resume: resume.url,
     });
+
     return res.status(201).json({
-        message : "Information collected successfully",
-        applicationId: candidate._id,
-      });
+      message: "Information collected successfully",
+      applicationId: candidate._id,
+    });
   } catch (err) {
     console.log("Error in controller : ", err.message);
 
