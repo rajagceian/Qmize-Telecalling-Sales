@@ -296,9 +296,9 @@ function App() {
             <p>
               Thank you for applying for the
               <strong>
-                {" "}STEAM/Robotics Trainer
+                {" "}Telecalling Sales Executive
               </strong>
-              {" "}position at Aviotron Aerospace Pvt. Ltd.
+              {" "}position at Qmize.
             </p>
 
             <p>
@@ -371,13 +371,13 @@ function App() {
       <section className="banner">
 
         <h1>
-          STEAM/Robotics Trainer – Student Application
+          Telecalling Sales Executive – Student Application
         </h1>
 
         <p>
-          Apply for the STEAM/Robotics Trainer opportunity at
-          Aviotron Aerospace Pvt. Ltd. Please provide accurate
-          details and upload your latest resume.
+          Apply for the Telecalling Sales Executive opportunity at
+          Qmize (IT &amp; Digital Marketing Services). Please provide
+          accurate details and upload your latest resume.
         </p>
 
       </section>
@@ -395,8 +395,9 @@ function App() {
             Fill in your details carefully.
             All fields marked with
             <span className="required"> *</span>
-            are mandatory. Eligibility requires no active
-            backlogs and a minimum 6.5 CGPA.
+            are mandatory. Eligibility: 12th Pass / Graduate,
+            freshers and experienced candidates both welcome.
+            Hindi communication is mandatory for this role.
           </p>
 
 
@@ -490,59 +491,34 @@ function App() {
               />
 
 
-              {/* BRANCH */}
+              {/* QUALIFICATION */}
 
               <div className="form-group">
 
                 <label>
-                  Branch <span>*</span>
+                  Highest Qualification <span>*</span>
                 </label>
 
                 <select
-                  name="branch"
+                  name="qualification"
                   required
                 >
 
                   <option value="">
-                    Select your branch
+                    Select qualification
                   </option>
 
-                  <option value="CSE">
-                    Computer Science & Engineering
+                  <option value="12th Pass">
+                    12th Pass
                   </option>
 
-                  <option value="ECE">
-                    Electronics & Communication Engineering
-                  </option>
-
-                  <option value="EEE">
-                    Electrical & Electronics Engineering
-                  </option>
-
-                  <option value="ME">
-                    Mechanical Engineering
-                  </option>
-
-                  <option value="Other">
-                    Other (Aerospace / Mechatronics / AI-ML / Robotics)
+                  <option value="Graduate">
+                    Graduate (Pursuing/Completed)
                   </option>
 
                 </select>
 
               </div>
-
-
-              {/* CGPA */}
-
-              <FormField
-                label="CGPA / Percentage"
-                name="cgpa"
-                type="number"
-                placeholder="Enter your current CGPA or %"
-                min="0"
-                max="10"
-                step="0.01"
-              />
 
 
               {/* PASSOUT */}
@@ -566,23 +542,25 @@ function App() {
                     2026
                   </option>
 
-                  
+                  <option value="2027">
+                    2027
+                  </option>
 
                 </select>
 
               </div>
 
 
-              {/* BACKLOGS */}
+              {/* EXPERIENCE */}
 
               <div className="form-group">
 
                 <label>
-                  Any Active Backlogs? <span>*</span>
+                  Relevant Experience <span>*</span>
                 </label>
 
                 <select
-                  name="backlogs"
+                  name="experience"
                   required
                 >
 
@@ -590,12 +568,12 @@ function App() {
                     Select an option
                   </option>
 
-                  <option value="No">
-                    No
+                  <option value="Fresher">
+                    Fresher
                   </option>
 
-                  <option value="Yes">
-                    Yes
+                  <option value="Experienced">
+                    Experienced
                   </option>
 
                 </select>
@@ -603,16 +581,16 @@ function App() {
               </div>
 
 
-              {/* LAPTOP */}
+              {/* HINDI COMMUNICATION */}
 
               <div className="form-group">
 
                 <label>
-                  Do you have a personal laptop for work? <span>*</span>
+                  Comfortable with Hindi Communication? <span>*</span>
                 </label>
 
                 <select
-                  name="hasLaptop"
+                  name="hindiCommunication"
                   required
                 >
 
@@ -812,7 +790,7 @@ function Header() {
     <header>
 
       <div className="logo">
-        AVIOTRON AEROSPACE
+        QMIZE
       </div>
 
       <div className="header-tag">
