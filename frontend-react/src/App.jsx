@@ -586,7 +586,7 @@ function App() {
               <div className="form-group">
 
                 <label>
-                  Comfortable with Hindi Communication? <span>*</span>
+                  Comfortable with Hindi + English Communication? <span>*</span>
                 </label>
 
                 <select
